@@ -9,9 +9,16 @@ function App() {
   return (
     <div className="App">
       {/* <h1> Hello world </h1> */}
-      {/* <Greet /> */}
+      <Greet name="Alen">
+      <p>This is children props</p>
+      </Greet>
+      <Greet name="Bruce">
+      <button>Click</button>
+      </Greet>
+      <Greet name="Alice">
+      </Greet>
       {/* <Welcome /> */}
-      <Hello />
+      {/* <Hello /> */}
     </div>
   );
 }
