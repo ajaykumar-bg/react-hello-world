@@ -12,7 +12,8 @@ function App() {
     <div className="App">
       {/* <h1> Hello world </h1> */}
       <Greet name="Peter Dinklage" heroName ="Tyrion"></Greet>
-      {/* <Welcome  name="Alen"></Welcome>
+      <Welcome name="Peter Dinklage" heroName ="Tyrion"></Welcome>
+      {/* 
       <Hello></Hello>
       <Message></Message>
       <Counter></Counter> */}
