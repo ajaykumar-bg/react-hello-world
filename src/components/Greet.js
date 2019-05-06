@@ -3,7 +3,7 @@ import React from 'react';
 const Greet = (props) => {
     return (
         <div>
-            <h2>Hello {props.name}</h2>
+            <h2>Hello {props.name} a.k.a {props.heroName}</h2>
             {props.children}
         </div>
     );
