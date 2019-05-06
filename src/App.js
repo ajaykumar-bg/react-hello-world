@@ -17,7 +17,9 @@ function App() {
       </Greet>
       <Greet name="Alice">
       </Greet>
-      {/* <Welcome /> */}
+      <Welcome  name="Alen"><p>This is children props</p></Welcome>
+      <Welcome  name="Bruce"><button>Click me</button></Welcome>
+      <Welcome  name="Alice"></Welcome>
       {/* <Hello /> */}
     </div>
   );
