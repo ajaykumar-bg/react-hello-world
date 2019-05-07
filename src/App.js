@@ -11,6 +11,7 @@ import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import NameList from './components/NameList';
+import StyleSheets from './components/StyleSheets';
 
 function App() {
   return (
@@ -24,8 +25,13 @@ function App() {
       <FunctionClick />
       <ClassClick />
       <EventBind />
-      <ParentComponent /> */}
-      <NameList />
+      <ParentComponent />
+      <NameList /> */}
+      <StyleSheets color="primary"/>
+      <StyleSheets color="danger"/>
+      <StyleSheets color="success"/>
+      <StyleSheets color="warning"/>
+      <StyleSheets />
     </div>
   );
 }
