@@ -28,10 +28,15 @@ class Forms extends Component {
             skill: event.target.value
         });
     }
+
+    handleSubmit = event => {
+        event.preventDefault();
+        console.log(this.state);
+    }
     
     render() {
         return (
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 <div>
                     <label>User name</label>
                     <input type="text" value={this.state.username} onChange={this.handleUserNameChange}></input>
@@ -49,8 +54,13 @@ class Forms extends Component {
                     </select>
                 </div>
 
-                Entered values = <pre>{JSON.stringify(this.state, null, 2)}</pre>
-                
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+
+                <div>
+                    Entered values = <pre>{JSON.stringify(this.state, null, 2)}</pre>
+                </div>
             </form>
         );
     }
