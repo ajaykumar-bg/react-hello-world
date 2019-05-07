@@ -12,6 +12,7 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import NameList from './components/NameList';
 import StyleSheets from './components/StyleSheets';
+import Forms from './components/Forms';
 
 function App() {
   return (
@@ -27,11 +28,9 @@ function App() {
       <EventBind />
       <ParentComponent />
       <NameList /> */}
-      <StyleSheets color="primary"/>
-      <StyleSheets color="danger"/>
-      <StyleSheets color="success"/>
-      <StyleSheets color="warning"/>
-      <StyleSheets />
+      {/* <StyleSheets color="primary"/>
+      <StyleSheets /> */}
+      <Forms />
     </div>
   );
 }
