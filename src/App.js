@@ -14,6 +14,7 @@ import NameList from './components/NameList';
 import StyleSheets from './components/StyleSheets';
 import Forms from './components/Forms';
 import LifecycleA from './components/LifecycleA';
+import Table from './components/Table';
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
       {/* <StyleSheets color="primary"/>
       <StyleSheets /> */}
       {/* <Forms /> */}
-      <LifecycleA />
+      {/* <LifecycleA /> */}
+      <Table />
     </div>
   );
 }
