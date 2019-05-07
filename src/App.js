@@ -13,6 +13,7 @@ import ParentComponent from './components/ParentComponent';
 import NameList from './components/NameList';
 import StyleSheets from './components/StyleSheets';
 import Forms from './components/Forms';
+import LifecycleA from './components/LifecycleA';
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
       <NameList /> */}
       {/* <StyleSheets color="primary"/>
       <StyleSheets /> */}
-      <Forms />
+      {/* <Forms /> */}
+      <LifecycleA />
     </div>
   );
 }
