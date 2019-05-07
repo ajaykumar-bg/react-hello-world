@@ -22,7 +22,7 @@ class EventBind extends Component {
                 <div>
                     <h2>{this.state.message}</h2>
                 </div>
-                <button onClick={this.clickHandler.bind(this)}>Click</button>
+                <button onClick={() => this.clickHandler()}>Click</button>
             </div>
         );
     }
