@@ -15,6 +15,7 @@ import StyleSheets from './components/StyleSheets';
 import Forms from './components/Forms';
 import LifecycleA from './components/LifecycleA';
 import Table from './components/Table';
+import RefDemo from './components/RefDemo';
 
 function App() {
   return (
@@ -34,7 +35,8 @@ function App() {
       <StyleSheets /> */}
       {/* <Forms /> */}
       {/* <LifecycleA /> */}
-      <Table />
+      {/* <Table /> */}
+      <RefDemo />
     </div>
   );
 }
