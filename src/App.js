@@ -17,6 +17,8 @@ import LifecycleA from './components/LifecycleA';
 import Table from './components/Table';
 import RefDemo from './components/RefDemo';
 import FocusInput from './components/FocusInput';
+import FRParentInput from './components/FRParentInput';
+
 
 function App() {
   return (
@@ -38,7 +40,8 @@ function App() {
       {/* <LifecycleA /> */}
       {/* <Table /> */}
       {/* <RefDemo /> */}
-      <FocusInput />
+      {/* <FocusInput /> */}
+      <FRParentInput />
     </div>
   );
 }
