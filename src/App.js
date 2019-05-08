@@ -24,6 +24,10 @@ import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
 
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import RenderPropsCounter from './components/RenderPropsCounter'
+
 
 function App() {
   return (
@@ -54,8 +58,18 @@ function App() {
         <Hero heroName="Ironman" />
         <Hero heroName="Jocker" />
       </ErrorBoundary> */}
-      <ClickCounter name="Ajay"/>
-      <HoverCounter />
+      {/* <ClickCounter/>
+      <HoverCounter /> */}
+
+      <RenderPropsCounter render={
+        (count, incrementCount) => 
+          <ClickCounterTwo count={count} incrementCount={incrementCount}/>
+        }></RenderPropsCounter>
+
+<RenderPropsCounter render={
+        (count, incrementCount) => 
+          <HoverCounterTwo count={count} incrementCount={incrementCount}/>
+        }></RenderPropsCounter>
 
     </div>
   );
