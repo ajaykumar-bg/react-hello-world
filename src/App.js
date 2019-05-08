@@ -18,6 +18,7 @@ import Table from './components/Table';
 import RefDemo from './components/RefDemo';
 import FocusInput from './components/FocusInput';
 import FRParentInput from './components/FRParentInput';
+import PortalDemo from './components/PortalDemo';
 
 
 function App() {
@@ -41,7 +42,8 @@ function App() {
       {/* <Table /> */}
       {/* <RefDemo /> */}
       {/* <FocusInput /> */}
-      <FRParentInput />
+      {/* <FRParentInput /> */}
+      <PortalDemo />
     </div>
   );
 }
