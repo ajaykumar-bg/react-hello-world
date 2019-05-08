@@ -61,15 +61,17 @@ function App() {
       {/* <ClickCounter/>
       <HoverCounter /> */}
 
-      <RenderPropsCounter render={
+      <RenderPropsCounter>
+      {
         (count, incrementCount) => 
           <ClickCounterTwo count={count} incrementCount={incrementCount}/>
-        }></RenderPropsCounter>
+        }
+      </RenderPropsCounter>
 
-<RenderPropsCounter render={
-        (count, incrementCount) => 
-          <HoverCounterTwo count={count} incrementCount={incrementCount}/>
-        }></RenderPropsCounter>
+<RenderPropsCounter>
+{(count, incrementCount) => 
+          <HoverCounterTwo count={count} incrementCount={incrementCount}/>}
+</RenderPropsCounter>
 
     </div>
   );
