@@ -77,9 +77,7 @@ function App() {
           <HoverCounterTwo count={count} incrementCount={incrementCount}/>}
 </RenderPropsCounter>
 
-      <UserProvider value="Ajay">
-        <ComponentC />
-      </UserProvider>
+      <ComponentC />
 
     </div>
   );
