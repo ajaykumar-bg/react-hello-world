@@ -54,7 +54,7 @@ function App() {
         <Hero heroName="Ironman" />
         <Hero heroName="Jocker" />
       </ErrorBoundary> */}
-      <ClickCounter />
+      <ClickCounter name="Ajay"/>
       <HoverCounter />
 
     </div>
