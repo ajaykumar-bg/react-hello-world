@@ -28,6 +28,10 @@ import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
 import RenderPropsCounter from './components/RenderPropsCounter'
 
+import ComponentC from './components/ComponentC';
+
+import {UserProvider} from './components/userContext'
+
 
 function App() {
   return (
@@ -72,6 +76,10 @@ function App() {
 {(count, incrementCount) => 
           <HoverCounterTwo count={count} incrementCount={incrementCount}/>}
 </RenderPropsCounter>
+
+      <UserProvider value="Ajay">
+        <ComponentC />
+      </UserProvider>
 
     </div>
   );
