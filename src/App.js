@@ -16,6 +16,7 @@ import Forms from './components/Forms';
 import LifecycleA from './components/LifecycleA';
 import Table from './components/Table';
 import RefDemo from './components/RefDemo';
+import FocusInput from './components/FocusInput';
 
 function App() {
   return (
@@ -36,7 +37,8 @@ function App() {
       {/* <Forms /> */}
       {/* <LifecycleA /> */}
       {/* <Table /> */}
-      <RefDemo />
+      {/* <RefDemo /> */}
+      <FocusInput />
     </div>
   );
 }
