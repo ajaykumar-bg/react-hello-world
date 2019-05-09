@@ -32,6 +32,7 @@ import ComponentC from './components/ComponentC';
 
 import {UserProvider} from './components/userContext'
 import Posts from './components/Posts'
+import HttpPost from './components/HttpPost'
 
 
 function App() {
@@ -81,6 +82,7 @@ function App() {
       </UserProvider> */}
 
       <Posts />
+      <HttpPost />
 
     </div>
   );
