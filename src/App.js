@@ -31,6 +31,7 @@ import RenderPropsCounter from './components/RenderPropsCounter'
 import ComponentC from './components/ComponentC';
 
 import {UserProvider} from './components/userContext'
+import Posts from './components/Posts'
 
 
 function App() {
@@ -65,19 +66,21 @@ function App() {
       {/* <ClickCounter/>
       <HoverCounter /> */}
 
-      <RenderPropsCounter>
-      {
-        (count, incrementCount) => 
-          <ClickCounterTwo count={count} incrementCount={incrementCount}/>
-        }
+      {/* <RenderPropsCounter>
+      {(count, incrementCount) => 
+          <ClickCounterTwo count={count} incrementCount={incrementCount}/>}
       </RenderPropsCounter>
 
-<RenderPropsCounter>
-{(count, incrementCount) => 
-          <HoverCounterTwo count={count} incrementCount={incrementCount}/>}
-</RenderPropsCounter>
+      <RenderPropsCounter>
+      {(count, incrementCount) => 
+                <HoverCounterTwo count={count} incrementCount={incrementCount}/>}
+      </RenderPropsCounter>
 
-      <ComponentC />
+      <UserProvider value="Ajay">
+        <ComponentC />
+      </UserProvider> */}
+
+      <Posts />
 
     </div>
   );
