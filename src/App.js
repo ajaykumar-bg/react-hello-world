@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
 
 import Greet from './components/Greet';
@@ -37,54 +38,54 @@ import HttpPost from './components/HttpPost'
 
 function App() {
   return (
-    <div className="App">
-      {/* <h1> Hello world </h1> */}
-      {/* <Greet name="Peter Dinklage" heroName ="Tyrion"></Greet>
-      <Welcome name="Peter Dinklage" heroName ="Tyrion"></Welcome>
-      <Hello></Hello>
-      <Message></Message>
-      <Counter></Counter>
-      <FunctionClick />
-      <ClassClick />
-      <EventBind />
-      <ParentComponent />
-      <NameList /> */}
-      {/* <StyleSheets color="primary"/>
-      <StyleSheets /> */}
-      {/* <Forms /> */}
-      {/* <LifecycleA /> */}
-      {/* <Table /> */}
-      {/* <RefDemo /> */}
-      {/* <FocusInput /> */}
-      {/* <FRParentInput /> */}
-      {/* <PortalDemo /> */}
-      {/* <ErrorBoundary>
-        <Hero heroName="Batman"/>
-        <Hero heroName="Superman" />
-        <Hero heroName="Ironman" />
-        <Hero heroName="Jocker" />
-      </ErrorBoundary> */}
-      {/* <ClickCounter/>
-      <HoverCounter /> */}
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/welcome/">Welcome</Link>
+            </li>
+            <li>
+              <Link to="/greet/">Greet</Link>
+            </li>
+            <li>
+              <Link to="/message/">Message</Link>
+            </li>
+            <li>
+              <Link to="/table/">Table</Link>
+            </li>
+            <li>
+              <Link to="/posts/">Posts</Link>
+            </li>
+            <li>
+              <Link to="/forms/">Forms</Link>
+            </li>
+            <li>
+              <Link to="/refDemo/">RefDemo</Link>
+            </li>
+            <li>
+              <Link to="/portalDemo/">PortalDemo</Link>
+            </li>
 
-      {/* <RenderPropsCounter>
-      {(count, incrementCount) => 
-          <ClickCounterTwo count={count} incrementCount={incrementCount}/>}
-      </RenderPropsCounter>
+          </ul>
+        </nav>
 
-      <RenderPropsCounter>
-      {(count, incrementCount) => 
-                <HoverCounterTwo count={count} incrementCount={incrementCount}/>}
-      </RenderPropsCounter>
+        <Route path="/" exact component={Hello} />
+        <Route path="/welcome/" component={Welcome} />
+        <Route path="/greet/" component={Greet} />
+        <Route path="/message/" component={Message} />
+        <Route path="/posts/" component={Posts} />
 
-      <UserProvider value="Ajay">
-        <ComponentC />
-      </UserProvider> */}
-
-      <Posts />
-      <HttpPost />
-
-    </div>
+        <Route path="/forms/" component={Forms} />
+        <Route path="/table/" component={Table} />
+        <Route path="/refDemo/" component={RefDemo} />
+        <Route path="/portalDemo/" component={PortalDemo} />
+        
+      </div>
+    </Router>
   );
 }
 
