@@ -1,4 +1,5 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux'
+import logger from 'redux-logger'
 
 
 const mathReducer = (state = {
@@ -61,11 +62,10 @@ const myLogger = (store) => (next) => (action) => {
 const store = createStore(combineReducers( 
     {mathReducer, userReducer}), 
     {}, 
-    applyMiddleware(myLogger)
+    applyMiddleware(logger)
 );
 
 store.subscribe(() => {
-    console.log("Store Updated", store.getState());
 });
 
 store.dispatch({
